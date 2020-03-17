@@ -18,7 +18,7 @@ const App = () => {
         <MovieList />
       </Route>
       <Route path="/movie/:id">
-        <Movie />
+        <Movie props={addToSavedList} />
       </Route>
     </div>
   );

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const SavedList = props => (
   <div className="saved-list">
@@ -6,7 +6,9 @@ const SavedList = props => (
     {props.list.map(movie => (
       <span className="saved-movie">{movie.title}</span>
     ))}
-    <div className="home-button">Home</div>
+    <div onClick={history.goBack} className="home-button">
+      Home
+    </div>
   </div>
 );
 
